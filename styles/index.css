@@ -1,0 +1,39 @@
+.title {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container {
+    height: 100%;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: 50px auto 50px;
+}
+
+.flexbox-header {
+    display: flex;
+}
+
+.flexbox-header > div:nth-child(3) {
+    margin-left: auto;
+}
+
+.header {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration: none;
+}
+
+.background {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-evenly;
+}

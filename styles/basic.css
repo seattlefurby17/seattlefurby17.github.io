@@ -4,35 +4,27 @@ html, body {
     font-size: 20px;
   }
   
-  p {
-    color: #96ceb4;
-    text-align: center;
-  }
-  
-  .flexbox-header > div {
+  h1 {
     display: flex;
-    font-size: 1em;
+    justify-content: space-evenly;
+    color: #e35343;
+    font-size: 2em;
     padding: 10px 20px;
-    /* text-decoration: none; */
+  }
+
+  p {
+    color: #2274a0;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0px 40px;
+  }
+
+  .nav {
+    background-color: #88d8b0;
   }
   
-  .flexbox-header {
-    background-color: #96ceb4;
-    color: #ffeead;
-    /* text-decoration: none; */
-  }
-  
-  .header {
-      background-color: #96ceb4;	
-      /* text-decoration: none; */
-  }
-  
-  .header :nth-child(2) {
+  .nav :nth-child(2) {
       padding: 0 40px;
-  }
-  
-  .title {
-      color: #e35343;
   }
   
   .footer {

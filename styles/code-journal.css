@@ -3,7 +3,8 @@
     display: grid;
     grid-gap: 5px;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    grid-template-rows: auto;
+    /* grid-auto-rows: 75px;
+    grid-auto-flow: dense; */
 }
 
 .header {
@@ -21,26 +22,14 @@
 .content{
     grid-column: 1 / -1;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
+    padding: 0px 30px;
 }
 
-.first-left {
-    grid-column: 1 / 8;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-/* .second-right {
-    grid-column: 12 / -1;
-    display: flex;
-    justify-content: flex-end;
-} */
-
-.last {
-    grid-auto-rows: auto;
-    display: flex;
-    justify-content: space-evenly;
-
+.content > div > img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 .footer {
